@@ -1,0 +1,75 @@
+@font-face {
+  /* pacifico-regular - latin */
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./font/pacifico/pacifico-v22-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("./font/pacifico/Pacifico.ttf") format("truetype");
+}
+
+@font-face {
+  /* roboto-regular - latin */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* variables*/
+:root {
+  --texte-blanc: #fff;
+  --texte-vert: rgba(0, 153, 0);
+  --background-rouge: rgba(153, 0, 0);
+  --background-marron: rgba(92, 0, 0);
+}
+
+#menu,
+.btn-nous-trouver,
+.nos-services,
+footer {
+  background-color: var(--background-rouge);
+}
+
+.btn-nous-trouver {
+  pointer-events: none;
+}
+
+.logo,
+h2,
+h5,
+footer {
+  font-family: "Pacifico";
+}
+
+h2,
+h5,
+.contact {
+  color: var(--texte-vert);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(232,229,202)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  color: var(--texte-blanc);
+  border: 1px solid var(--texte-blanc);
+}
+
+.nos-services .card,
+.text-service {
+  background-color: var(--background-marron);
+  color: #fff;
+}
